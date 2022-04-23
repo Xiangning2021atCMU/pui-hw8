@@ -51,10 +51,53 @@ skillsHeader.forEach((element) => {
 })
 
 /*==================== QUALIFICATION TABS ====================*/
+const tabs = document.querySelectorAll('[data-target]')
+const tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach((tab) => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.target)
+    // remove all the qualification active first
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove('qualification__active')
+    })
+    // then add qualification__active to the one we need.
+    target.classList.add('qualification__active')
+
+    // first remove all the active class from tabs
+    tabs.forEach((tab) => {
+      tab.classList.remove('qualification__active')
+    })
+
+    // add active to the clicked tab.
+    tab.classList.add('qualification__active')
+  })
+})
 
 /*==================== SERVICES MODAL ====================*/
 
 /*==================== PORTFOLIO SWIPER  ====================*/
+// const swiper = new Swiper('.swiper', {
+//   // Optional parameters
+//   direction: 'vertical',
+//   loop: true,
+
+//   // If we need pagination
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
+// })
 
 /*==================== TESTIMONIAL ====================*/
 
