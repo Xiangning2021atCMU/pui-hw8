@@ -12,7 +12,7 @@
 
   /* HSL color mode */
   /* //55 60 */
-  --first-color: hsl(var(--hue-color), 80%, 60%);
+  --first-color: hsl(var(--hue-color), 76%, 51%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 80%, 45%);
   --first-color-lighter: hsl(var(--hue-color), 98%, 92%);
@@ -335,6 +335,7 @@ img {
 
 /*==================== BUTTONS ====================*/
 .button{
+  font-family: var(--body-font);
   display:inline-block;
   background-color:var(--first-color);
   color:white;
@@ -632,6 +633,8 @@ img {
 }
 
 .portfolio__button{
+  font-size:1rem;
+  color:white;
   margin-bottom: var(--mb-2-5)
 }
 
@@ -724,8 +727,10 @@ img {
 
 
 .contact__sendbutton{
+  color:white;
   font-family:  var(--body-font);
   text-align: center;
+  font-size:1rem;
 }
 
 .flex-parent{
