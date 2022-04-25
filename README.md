@@ -4,7 +4,7 @@ A website for Xiangning Lin's portfolio, which includes the brief introduction, 
 
 ## a. Video:
 
-give the video link here.
+https://cmu.zoom.us/rec/share/CbhKwo11Saml_GzNIHcZWr3Mt5ovUjVaHecRSAhUG23uTnMveUar2epz8sc9vxU.ezAl5PnnyVk0ye2d?startTime=1650869939000
 
 ## b. Figma and website:
 
@@ -68,7 +68,7 @@ Recruiters from tech companies.
 
 - list: in the skills session, the first list is by default open, you can click the arrow to fold it and unfold it. The arrow's direction changes according to whether its list is folded or not.
 
-- resize: the website is designed for three different sizes, \*\* large size(around 1440px), medium size(around 750px), small size(around 400px)\*\*, (note only these three sizes are implemented, other sizes are not presented in a responsive way)it gives you different layout, you can open the inspect by right click on your mouse, resize the website to 1440/750/400 and check the layout of the websites accordingly.
+- resize: the website is designed for three different sizes, \*\* large size(around 1440px), medium size(around 700px), small size(around 400px)\*\*, (note only these three sizes are implemented, other sizes are not presented in a responsive way)it gives you different layout, you can open the inspect by right click on your mouse, resize the website to 1440/700/400 and check the layout of the websites accordingly.
 
 ## e. External libraries:
 
