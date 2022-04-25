@@ -1,34 +1,11 @@
-/*==================== GOOGLE FONTS ====================*/
+/*==================== Google Fonts ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/*==================== VARIABLES CSS ====================*/
+/*==================== Define variables ====================*/
 :root {
   --header-height: 3rem;
-
-  /*========== Colors ==========*/
-  /* Change favorite color */
-  --hue-color: 348;
-  /* 107; Purple 250 - Green 142 - Blue 230 - Pink 340 */
-
-  /* HSL color mode */
-  /* //55 60 */
-  --first-color: hsl(var(--hue-color), 76%, 51%);
-  --first-color-second: hsl(var(--hue-color), 69%, 61%);
-  --first-color-alt: hsl(var(--hue-color), 80%, 45%);
-  --first-color-lighter: hsl(var(--hue-color), 98%, 92%);
-  --title-color: #242329
-  --text-color: hsl(var(--hue-color), 8%, 45%);
-  --text-color-light: hsl(var(--hue-color), 8%, 65%);
-  --input-color: hsl(var(--hue-color), 70%, 96%);
-  --body-color: hsl(var(--hue-color), 60%, 99%);
-  --container-color: #fff;
-  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
-
-  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -43,7 +20,6 @@
   --font-semi-bold: 600;
 
   /*========== Margenes Bottom ==========*/
-  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
   --mb-0-25: 0.25rem;
   --mb-0-5: 0.5rem;
   --mb-0-75: 0.75rem;
@@ -54,12 +30,19 @@
   --mb-3: 3rem;
 
   /*========== z index ==========*/
-  --z-tooltip: 10;
   --z-fixed: 100;
-  --z-modal: 1000;
+
+  /*========== Colors ==========*/
+  --hue-color: 348;
+  --first-color: hsl(var(--hue-color), 76%, 51%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 80%, 45%);
+  --first-color-lighter: hsl(var(--hue-color), 98%, 92%);
+  --title-color: #242329
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
 }
 
-/* Font size for large devices */
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3rem;
@@ -72,11 +55,8 @@
   }
 }
 
-/*========== Variables Dark theme ==========*/
 
-/*========== Button Dark/Light ==========*/
-
-/*==================== BASE ====================*/
+/*==================== Base ====================*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -88,7 +68,6 @@ html {
 }
 
 body {
-  /* margin: 0 0 var(--header-height) 0; */
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -127,7 +106,7 @@ img {
   height: auto;
 }
 
-/*==================== REUSABLE CSS CLASSES ====================*/
+/*==================== Repetitve css classes ====================*/
 .section {
   padding: 2rem 0 4rem;
 }
@@ -148,7 +127,7 @@ img {
   text-align: center;
 }
 
-/*==================== LAYOUT ====================*/
+/*==================== Layout ====================*/
 .container {
   max-width: 80vmax;
   margin-left: var(--mb-1-5);
@@ -169,7 +148,7 @@ img {
   background-color: var(--body-color);
 }
 
-/*==================== NAV ====================*/
+/*==================== Nav ====================*/
 .nav {
   max-width: 968px;
   height: var(--header-height);
@@ -262,13 +241,12 @@ img {
   color: var(--first-color-alt);
 }
 
-/* show menu */
 .show-menu{
   bottom:0;
   transition:0.3s;
 }
 
-/*==================== HOME ====================*/
+/*==================== Home ====================*/
 .home__container{
   gap:1rem;
 }
@@ -345,7 +323,7 @@ img {
   font-size:1.25rem;
 }
 
-/*==================== BUTTONS ====================*/
+/*==================== Buttons ====================*/
 .button{
   font-family: var(--body-font);
   display:inline-block;
@@ -372,8 +350,7 @@ img {
   align-items: center
 }
 
-/*==================== ABOUT ====================*/
-
+/*==================== About ====================*/
 .about__img{
   width:300px;
   border-radius:0.5rem;
@@ -402,7 +379,6 @@ img {
   font-size:var(--small-font-size)
 }
 
-
 .about__info-title,
 .about__info-name{
   display:block;
@@ -415,7 +391,7 @@ img {
 }
 
 
-/*==================== SKILLS ====================*/
+/*==================== Skills ====================*/
 .skills__container{
   row-gap:0
 }
@@ -541,7 +517,7 @@ img {
 }
 
 
-/*==================== QUALIFICATION ====================*/
+/*==================== Qualification ====================*/
 .qualification__tabs{
   display:flex;
   justify-content:space-evenly;
@@ -614,7 +590,7 @@ img {
   color:var(--first-color)
 }
 
-/*==================== PORTFOLIO ====================*/
+/*==================== Projects/portfolio ====================*/
 .portfolio__container{
   overflow:initial;
 }
@@ -664,8 +640,6 @@ img {
   font-size: 18px;
   background: #fff;
 
-
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -700,8 +674,7 @@ img {
 
 }
 
-/*==================== CONTACT ME ====================*/
-
+/*==================== Contact ====================*/
 .contact__button{
   color:var(--first-color);
   margin-right:var(--mb-1-5);
@@ -751,7 +724,7 @@ img {
 }
 
 
-/*==================== FOOTER ====================*/
+/*==================== Footer ====================*/
 .footer {
   padding-top:2rem;
   padding-bottom: 3rem;
@@ -817,7 +790,7 @@ img {
   display: none;
 }
 
-/*==================== MEDIA QUERIES ====================*/
+/*==================== Responsive design ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
   .container{
@@ -832,18 +805,18 @@ img {
 
 
   .home__img{
-    width: 200px; /* width of container */
-    height: 200px; /* height of container */
+    width: 200px;
+    height: 200px;
     object-fit: cover;
-    object-position: 30% 25%; /* try 20px 10px */ 
+    object-position: 30% 25%;
     border-radius: 50%;
   }
 
   .about__img{
-    width: 200px; /* width of container */
-    height: 200px; /* height of container */
+    width: 200px;
+    height: 200px; 
     object-fit: cover;
-    object-position: 0% 2%; /* try 20px 10px */ 
+    object-position: 0% 2%;
     border-radius: 50%;
     margin-left:5%;
   }
@@ -900,10 +873,10 @@ img {
   }
 
   .home__img{
-    width: 300px; /* width of container */
-    height: 300px; /* height of container */
+    width: 300px; 
+    height: 300px; 
     object-fit: cover;
-    object-position: 30% 25%; /* try 20px 10px */ 
+    object-position: 30% 25%;
     border-radius: 50%;
   }
 
@@ -918,10 +891,10 @@ img {
   }
 
   .about__img{
-    width: 300px; /* width of container */
-    height: 300px; /* height of container */
+    width: 300px;
+    height: 300px; 
     object-fit: cover;
-    object-position: 0% 2%; /* try 20px 10px */ 
+    object-position: 0% 2%;
     border-radius: 50%;
     margin-left:5%;
   }
@@ -932,7 +905,6 @@ img {
   }
 
   .skills__container,
-  /* .footer__container, */
   .contact__container{
     grid-template-columns:repeat(2, 1fr);
   }
@@ -948,7 +920,6 @@ img {
     height:250px !important;
     padding-top:0px;
     padding-bottom: 0px;
-    /* padding:20px; */
     object-fit: cover;
   }
   
@@ -984,7 +955,6 @@ img {
 
   .header,
   .main
-  /* .footer__container */
   {
     padding: 0 1rem;
   }
@@ -1027,19 +997,17 @@ img {
   width:120vmax;
   align-items: center;
   padding: 0px 50px;
-  /* margin:0px auto; */
   margin: 50px 0;
   grid-template-columns:repeat(2, 1fr);
-}
+  }
 
-.portfolio__img{
-  width:500px !important;
-  height:300px !important;
-  padding-top:10px;
-  padding-bottom: 28px;
-  object-fit: cover;
-}
-
+  .portfolio__img{
+    width:500px !important;
+    height:300px !important;
+    padding-top:10px;
+    padding-bottom: 28px;
+    object-fit: cover;
+  }
 
   .about__container{
     border-radius: 25px;
@@ -1047,7 +1015,7 @@ img {
     flex-direction: row-reverse;
     align-items: center;
   }
-  
+
   .home__data{
     padding-top:6rem;
     width:50vmax;
@@ -1063,10 +1031,10 @@ img {
   }
 
   .home__img{
-    width: 360px; /* width of container */
-    height: 360px; /* height of container */
+    width: 360px; 
+    height: 360px; 
     object-fit: cover;
-    object-position: 30% 25%; /* try 20px 10px */ 
+    object-position: 30% 25%; 
     border-radius: 50%;
     margin-left:5%;
   }
@@ -1082,10 +1050,10 @@ img {
   }
 
   .about__img{
-    width: 360px; /* width of container */
-    height: 360px; /* height of container */
+    width: 360px; 
+    height: 360px;
     object-fit: cover;
-    object-position: 0% 2%; /* try 20px 10px */ 
+    object-position: 0% 2%; 
     border-radius: 50%;
     margin-left:5%;
   }
@@ -1121,7 +1089,6 @@ img {
     background-position: 40% 60%;
     opacity:0.8;
   }
-
 
   .footer__titles{
     margin-bottom: var(--mb-2-5);
