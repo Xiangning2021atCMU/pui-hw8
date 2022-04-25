@@ -792,7 +792,8 @@ img {
 
 /*==================== Responsive design ====================*/
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
+
   .container{
     margin-left:var(--mb-1);
     margin-right:var(--mb-1);
@@ -850,6 +851,11 @@ img {
 
   .qualification__data{
     gap:0rem;
+  }
+
+  .html{
+    margin:0;
+    padding:0;
   }
 
 }
@@ -1086,7 +1092,7 @@ img {
     background-image: url("../img/background.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 40% 60%;
+    /* background-position: 40% 60%; */
     opacity:0.8;
   }
 
