@@ -74,37 +74,17 @@ tabs.forEach((tab) => {
   })
 })
 
-/*==================== SERVICES MODAL ====================*/
-
-/*==================== PORTFOLIO SWIPER  ====================*/
-// const swiper = new Swiper('.swiper', {
-//   // Optional parameters
-//   direction: 'vertical',
-//   loop: true,
-
-//   // If we need pagination
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
-
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-
-//   // And if we need scrollbar
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
-// })
-
-/*==================== TESTIMONIAL ====================*/
-
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-
-/*==================== CHANGE BACKGROUND HEADER ====================*/
-
-/*==================== SHOW SCROLL UP ====================*/
-
-/*==================== DARK LIGHT THEME ====================*/
+const myHeader = document.getElementById('header')
+const myNav = document.getElementById('nav-container')
+window.addEventListener('scroll', () => {
+  const scrollPos = window.scrollY
+  if (scrollPos > 0) {
+    myHeader.classList.add('nav__scrolldown') // this is the css class you'll target
+    myNav.classList.add('nav__scrolldown')
+    myNav.classList.remove('nav__scrollZero')
+  } else {
+    myHeader.classList.remove('nav__scrolldown')
+    myNav.classList.remove('nav__scrolldown')
+    myNav.classList.add('nav__scrollZero')
+  }
+})
