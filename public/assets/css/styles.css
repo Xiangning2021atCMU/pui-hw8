@@ -706,7 +706,7 @@ img {
 }
 
 .form-control{
-  width:90%;
+  width:100%;
   border:none;
   background-color: var(--first-color-lighter)
 }
@@ -920,12 +920,10 @@ img {
   }
 
   .skills__container,
-  .footer__container,
+  /* .footer__container, */
   .contact__container{
     grid-template-columns:repeat(2, 1fr);
   }
-
-
 
   .qualification__sections{
     display:grid;
@@ -933,10 +931,19 @@ img {
     justify-content: center;
   }
 
+  .portfolio__img{
+    width:500px !important;
+    height:250px !important;
+    padding-top:0px;
+    padding-bottom: 0px;
+    /* padding:20px; */
+    object-fit: cover;
+  }
+  
+
   .footer__social{
     font-size:0.75rem;
     color:var(--first-color);
-    
     margin-right:var(--mb-1-5);
     margin-top:var(--mb-3);
     padding-top:var(--mb-2);
@@ -1052,8 +1059,13 @@ img {
   }
 
   .home__scroll{
+    display:block;
     padding-top:7rem;
     margin:0;
+  }
+
+  .home__scroll__left{
+    display:none;
   }
 
   .about__img{
@@ -1075,10 +1087,27 @@ img {
 
   .contact_myinfo{
     width:500px;
-    margin-left:-200px;
     margin-right:50px;
     padding:0;
   }
+
+  .contact__sendmessage{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .contact__send_message_form{
+    display:flex;
+    flex-direction:column;
+  }
+
+  /* .contact__sendbutton{
+    /* margin-left:0%; */
+    position: absolute;
+    left:0;
+    
+  } */
+
 
   .footer__bg{
     background-image: url("../img/background.jpeg");
@@ -1090,7 +1119,7 @@ img {
 
 
   .footer__titles{
-    margin-left:-50%;
+    /* margin-left:10%; */
     margin-bottom: var(--mb-2-5);
   }
   .footer__container{

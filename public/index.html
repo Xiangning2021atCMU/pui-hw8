@@ -638,36 +638,41 @@
                 </div>
               </div>
             </div>
-          <div class="container">
-            <h3 class = "contact__form">Send me message!</h1>
+           
+          <div class = "contact__sendmessage">
+            
+            <div>
+              <h3 class = "contact__form">Send me message!</h1>
+            </div>
+            <div>
+
+           
             <form
               target="_blank"
               action="https://formsubmit.co/lynnr4920@gmail.com"
               method="POST"
+              class = "contact__send_message_form"
             >
-                    <label for ="contact_name">Name:
-                    </label>
-                     <input
-                      type="text"
-                      name="name"
-                      id = "contact_name"
-                      class="form-control contact__name"
-                      required
-                    />
-
+              <label for ="contact_name">Name:
+              </label>
+                <input
+                type="text"
+                name="name"
+                id = "contact_name"
+                class="form-control contact__name"
+                required
+              />
           
-                    <label for ="contact_email">Email:
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      id = "contact_email"
-                      class="form-control contact__email"
-                      required
-                    />
-           
-              <!-- <div class="form-group"> -->
-    
+              <label for ="contact_email">Email:
+              </label>
+              <input
+                type="email"
+                name="email"
+                id = "contact_email"
+                class="form-control contact__email"
+                required
+              />
+               
               <label for ="contact_message">Message:
                 </label>
                 <textarea
@@ -678,16 +683,20 @@
                   cols = "50"
                   required
                 ></textarea>
-              <!-- </div> -->
+
+                <div>
+                  <label for ="contact_submit_button" style="display: none;"> submit button 
+                  </label>
+                  <a href="#contact" class = "contact__sendbutton">
+                    <button id = "contact_submit_button" type="submit" class="button button--flex contact__sendbutton">
+                      Send <i class="fa-solid fa-paper-plane button__icon"></i>
+                    </button>
+                  </a>
+                </div>
              
-              <label for ="contact_submit_button" style="display: none;"> Messeage: 
-              </label>
-              <a href="#contact" class = "contact__sendbutton">
-                <button id = "contact_submit_button" type="submit" class="button button--flex contact__sendbutton">
-                  Send <i class="fa-solid fa-paper-plane button__icon"></i>
-                </button>
-              </a>
+             
             </form>
+          </div>
           </div>
         </div>
       </section>
