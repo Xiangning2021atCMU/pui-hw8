@@ -39,6 +39,7 @@
 
   /*========== Font weight ==========*/
   --font-medium: 500;
+  --font-large: 800;
   --font-semi-bold: 600;
 
   /*========== Margenes Bottom ==========*/
@@ -181,7 +182,11 @@ img {
   padding-right:1rem;
 }
 
-.nav__logo,
+.nav__logo{
+  color: var(--title-color);
+  font-size: var(--font-large);
+}
+
 .nav__toggle {
   color: var(--title-color);
   font-size: var(--font-medium);
